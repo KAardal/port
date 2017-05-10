@@ -7,10 +7,9 @@
 
 html, body {
   height: 100%;
+  text-align: center;
 }
 
 img {
-  width: 100px;
-  height: auto;
   max-width: 100%;
 }

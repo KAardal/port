@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
     <script src="https://use.fontawesome.com/fe9fcf98cb.js"></script>
   </head>
   <body>
     <div id="home">
-      <img src="resources/a_a_letter_logo_psd_design.png"/>
-      <ul>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
+      <nav class="main-nav">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <ul>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <img class="img-home" src="resources/a_a_letter_logo_psd_design.png"/>
     </div>
-    <div id="projects">
+    <div class="projects">
       <div class="template">
-        <img src="resources/devices.png"/>
+        <img class="img tamplate" src="resources/devices.png"/>
         <h2>App Name</h2>
         <p>
           This is a description of the app that I totally made, that is totally awesome, and you really want to use it. I swear, it's super cool.
@@ -27,7 +32,8 @@
       </div>
     </div>
     <div id="contact">
-      <img src="resources/User-512.png">
+      <img class="img-contact" src="resources/User-512.png">
+      <h3>Contact Me!</h3>
       <div class="social-media-div">
         <i class="fa fa-github" aria-hidden="true"></i>
         <i class="fa fa-linkedin" aria-hidden="true"></i>
