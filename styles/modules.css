@@ -20,10 +20,18 @@ img {
   padding-top: 30%;
 }
 
+.img-template, .img-contact {
+  width: 80%;
+}
+
 .social-media-div i {
   display: inline;
   padding-left: .5em;
   padding-right: .5em;
+}
+
+.main-nav ul{
+  display: none;
 }
 
 @media screen and (min-width: 640px){
@@ -31,19 +39,16 @@ img {
      display: none;
    }
 
-   .main-nav ul{
+   .img-home {
+     padding-top: 10%;
+     width: 35%;
+   }
+
+   .img-template, .img-contact {
+     width: 20%;
+   }
+
+   .main-nav ul {
      display: block;
-   }
-   .main-nav li{
-     display: inline;
-   }
-   .main-nav:hover ul{
-     display: block;
-   }
-   .main-nav li {
-     margin-right: .4em;
-     font-size: 1.5em;
-     padding: .5em .5em;
-     border-bottom: none;
    }
  }
