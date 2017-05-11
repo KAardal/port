@@ -9,7 +9,6 @@ function Project() {
   this.image;
   this.discription;
   this.repoURL;
-  this.languages;
 }
 
 main();

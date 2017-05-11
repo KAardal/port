@@ -1,0 +1,54 @@
+img {
+  width: 100%;
+}
+
+#home {
+  height: 100%;
+  background-image: url("../resources/oregon_coast_bw.jpg");
+  background-repeat: no-repeat;
+}
+
+.projects{
+  height: 50%;
+}
+
+#contact {
+  height: 25%;
+}
+
+.img-home {
+  padding-top: 30%;
+}
+
+.img-template, .img-contact {
+  width: 80%;
+}
+
+.social-media-div i {
+  display: inline;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.main-nav ul{
+  display: none;
+}
+
+@media screen and (min-width: 640px){
+   .fa.fa-bars{
+     display: none;
+   }
+
+   .img-home {
+     padding-top: 10%;
+     width: 35%;
+   }
+
+   .img-template, .img-contact {
+     width: 20%;
+   }
+
+   .main-nav ul {
+     display: block;
+   }
+ }
