@@ -35,7 +35,7 @@ img {
 }
 
 @media screen and (min-width: 640px){
-   .fa-bars{
+   .fa.fa-bars{
      display: none;
    }
 
