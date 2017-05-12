@@ -1,0 +1,10 @@
+#home {
+
+}
+
+.main-nav {
+  width: 100%;
+  border: 1px dotted blue;
+  position: fixed;
+  bottom: 0;
+}

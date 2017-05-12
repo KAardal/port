@@ -1,15 +1,15 @@
 'use strict';
 
-var projects = [
+var projectData = [
   {
     name: 'Chaotic Creator',
-    image: 'placeHolder.png',
+    image: 'resources/chaotic-creator-logo.png',
     description: 'Create Dungeons and Dragons characters quickly and easily with Chaotic Creator!',
     repoURL: 'www.github.com/twofacefear/chaoticcreator',
   },
   {
     name: 'Buncha Devices',
-    image: 'placeHolder.png',
+    image: 'resources/devices.png',
     description: 'It\'s a bunch of devices yo!',
     repoURL: '#',
   },
