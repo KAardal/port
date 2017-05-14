@@ -1,15 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  width: 100%;
   box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+  width: 100%;
   text-align: center;
 }
 
 img {
   max-width: 100%;
+}
+
+.main-nav {
+  background-color: grey;
+  text-align: left;
+}
+
+li {
+  display: inline;
 }
