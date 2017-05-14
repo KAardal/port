@@ -4,7 +4,16 @@
 
 .main-nav {
   width: 100%;
-  border: 1px dotted blue;
   position: fixed;
-  bottom: 0;
+  top: 0;
+}
+
+.burger-open-div {
+  text-align: left;
+}
+
+#burger-open {
+  width: auto;
+  position: fixed;
+  top: 0;
 }

@@ -16,4 +16,9 @@ img {
 
 .main-nav {
   background-color: grey;
+  text-align: left;
+}
+
+li {
+  display: inline;
 }

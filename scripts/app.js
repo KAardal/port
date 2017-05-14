@@ -10,16 +10,11 @@ function Project(projectData) {
 }
 
 Project.prototype.toHtml = function () {
-  var $newProject = $('div.template').clone();
-  $newProject.removeClass('template');
-  $newProject.find('.project-name').html(this.name);
-  $newProject.find('.project-img').attr('src', this.image);
-  $newProject.find('.project-description').html(this.description);
-  $newProject.find('project-repo').attr('src', this.repoURL);
-  return $newProject;
+  var template = Handlebars.compile($('#project-template').text());
+  return template(this);
 };
 
-projectData.forEach(function(projectObject) {
+dataForProjects.forEach(function(projectObject) {
   projects.push(new Project(projectObject));
 });
 
@@ -27,7 +22,26 @@ projects.forEach(function(project){
   $('#projects').append(project.toHtml());
 });
 
-$('.template').hide();
+$('#burger-close').on('click', function() {
+  $('.main-nav').slideUp();
+});
+
+if($(window).width() < 640) {
+  //$('#burger-close').click();
+  $('.main-nav').slideUp(0);
+}
+
+$(window).on('resize', function() {
+  if($(window).width() < 640) {
+    $('#burger-close').click();
+  } else {
+    $('#burger-open').click();
+  }
+})
+
+$('#burger-open').on('click', function() {
+  $('.main-nav').slideDown();
+});
 
 $('.main-nav li').on('click', function() {
   $('.tab').hide();

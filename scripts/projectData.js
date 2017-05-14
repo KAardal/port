@@ -1,6 +1,6 @@
 'use strict';
 
-var projectData = [
+var dataForProjects = [
   {
     name: 'Chaotic Creator',
     image: 'resources/chaotic-creator-logo.png',
@@ -15,7 +15,7 @@ var projectData = [
   },
   {
     name: 'Some Other Shit',
-    image: 'placeHolder.png',
+    image: 'resources/devices.png',
     description: 'I don\'t know yet',
     repoURL: '#',
   },
