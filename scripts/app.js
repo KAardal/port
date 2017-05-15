@@ -27,7 +27,6 @@ $('#burger-close').on('click', function() {
 });
 
 if($(window).width() < 640) {
-  //$('#burger-close').click();
   $('.main-nav').slideUp(0);
 }
 
