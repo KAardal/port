@@ -44,8 +44,8 @@ img {
 
   .img-template, .img-contact {
     width: 20%;
-  }
 
+  }
   .main-nav ul {
     display: block;
   }
@@ -54,3 +54,4 @@ img {
     display: inline;
     font-size: 1.5em;
   }
+}
