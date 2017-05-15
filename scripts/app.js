@@ -38,11 +38,13 @@ $(window).on('resize', function() {
   }
 })
 
-$('#burger-open').on('click', function() {
+$('#burger-open').on('click', function(e) {
+  e.preventDefault();
   $('.main-nav').slideDown();
 });
 
-$('.main-nav li').on('click', function() {
+$('.main-nav li').on('click', function(e) {
+  e.preventDefault();
   $('.tab').hide();
   $('#' + $(this).data('nav')).fadeIn();
 });
