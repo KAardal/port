@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/layout.css">
-    <link rel="stylesheet" href="styles/modules.css">
-    <script src="https://use.fontawesome.com/fe9fcf98cb.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
+  <script src="https://use.fontawesome.com/fe9fcf98cb.js"></script>
 
-    <script id="project-template" type="text/x-handlebars-template">
-      <div class="template">
-        <img class="project-img" src="{{image}}"/>
-        <h2 class="project-name">{{name}}</h2>
-        <p class="project-description">{{description}}</p>
-        <a class="project-repo" href="{{repoURL}}"><i class="fa fa-github" aria-hidden="true"></i></a>
-      </div>
-    </script>
-  </head>
-  <body>
-    <div class="burger-open-div">
-      <i id="burger-open" class="fa fa-bars" aria-hidden="true"></i>
+  <script id="project-template" type="text/x-handlebars-template">
+    <div class="template">
+      <img class="project-img" src="{{image}}"/>
+      <h2 class="project-name">{{name}}</h2>
+      <p class="project-description">{{description}}</p>
+      <a class="project-repo" href="{{repoURL}}"><i class="fa fa-github" aria-hidden="true"></i></a>
     </div>
-    <nav class="main-nav">
-      <i id="burger-close" class="fa fa-times" aria-hidden="true"></i>
-      <ul>
-        <li class="nav-tab" data-nav="home"><a href="#home">Home</a></li>
-        <li class="nav-tab" data-nav="projects"><a href="#projects">Projects</a></li>
-        <li class="nav-tab" data-nav="contact"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="home" class="tab">
-      <img class="img-home" src="resources/a_a_letter_logo_psd_design.png"/>
+  </script>
+</head>
+<body>
+  <div class="burger-open-div">
+    <i id="burger-open" class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <nav class="main-nav">
+    <i id="burger-close" class="fa fa-times" aria-hidden="true"></i>
+    <ul>
+      <li class="nav-tab" data-nav="home"><a href="#home">Home</a></li>
+      <li class="nav-tab" data-nav="projects"><a href="#projects">Projects</a></li>
+      <li class="nav-tab" data-nav="contact"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="home" class="tab">
+    <img class="img-home" src="resources/a_a_letter_logo_psd_design.png"/>
+  </div>
+  <div id="projects" class="tab"></div>
+  <div id="contact" class="tab">
+    <img class="img-contact" src="resources/User-512.png">
+    <h3>Contact Me!</h3>
+    <div class="social-media-div">
+      <a href="https://github.com/KAardal"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/kyle-aardal-544a49129/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/AardalKyle"<i class="fa fa-twitter" aria-hidden="true"></i></a>
     </div>
-    <div id="projects" class="tab"></div>
-    <div id="contact" class="tab">
-      <img class="img-contact" src="resources/User-512.png">
-      <h3>Contact Me!</h3>
-      <div class="social-media-div">
-        <a href="https://github.com/KAardal"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/kyle-aardal-544a49129/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/AardalKyle"<i class="fa fa-twitter" aria-hidden="true"></i></a>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="scripts/projectData.js"></script>
-    <script src="scripts/app.js"></script>
-  </body>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script src="scripts/projectData.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
 </html>
