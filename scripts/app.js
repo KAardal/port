@@ -14,26 +14,6 @@ Project.prototype.toHtml = function () {
   return template(this);
 };
 
-// // $.getJSON('url').then(success-callback, fail-callback)
-//   $.getJSON('/data/neighborhoodData.json')
-//   .then(
-//     // SUCCESS CALLBACK
-//     function(data) {
-//     console.log(data);
-//     localStorage.setItem('theHoods', JSON.stringify(data));
-//     data.forEach(function(neighborhoodObject) {
-//       neighborhoods.push(new Neighborhood(neighborhoodObject));
-//       console.log('neighborhoods array being built', neighborhoods);
-//     });
-//     neighborhoods.forEach(function(ourNewNeighborhoodObject){
-//       $('#neighborhoods').append(ourNewNeighborhoodObject.toHtml());
-//     });
-//   },
-//   // FAIL CALLBACK
-//   function(err) {
-//     console.error(err);
-//   });
-
 function renderProjects(data) {
   data.forEach(function(projectObject) {
     projects.push(new Project(projectObject));
