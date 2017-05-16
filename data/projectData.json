@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Chaotic Creator",
+    "image": "resources/chaotic-creator-logo.png",
+    "description": "Create Dungeons and Dragons characters quickly and easily with Chaotic Creator!",
+    "repoURL": "www.github.com/twofacefear/chaoticcreator"
+  },
+  {
+    "name": "Buncha Devices",
+    "image": "resources/devices.png",
+    "description": "It's a bunch of devices yo!",
+    "repoURL": "#"
+  },
+  {
+    "name": "Some Other Shit",
+    "image": "resources/devices.png",
+    "description": "I don't know yet",
+    "repoURL": "#"
+  }
+]
