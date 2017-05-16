@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/KAardal/portfolio/issues"
   },
-  "homepage": "https://github.com/KAardal/portfolio#readme"
+  "homepage": "https://github.com/KAardal/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
