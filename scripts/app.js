@@ -55,6 +55,7 @@ if(localStorage.projectData) {
 
     }, function(err) {
       console.log(err);
+      // COMMENT: only log error once.
       console.error(err);
     });
 }
