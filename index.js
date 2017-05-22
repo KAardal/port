@@ -1,5 +1,6 @@
 'use strict';
 // Load Express
+//COMMENT: I would rename this file server.js, index.js can be missleading.
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5000;
