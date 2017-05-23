@@ -84,8 +84,7 @@ var app = app || {};
 
   app.projectCounter = function() {
     $('#footer ').text(projects
-      .filter(project => project.body)
-      .map(body => body.split(' '))
+      .map(project => project.body.split(' '))
       .reduce((acc, cur) => acc + cur, 0)
     );
   }
