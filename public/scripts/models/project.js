@@ -4,7 +4,7 @@ var app = app || {};
 
 (function(module){
 
-  let projects = [];
+  let projects;
 
   app.Project= function(projectData) {
     this.name = projectData.name;
@@ -14,25 +14,26 @@ var app = app || {};
   }
 
   app.Project.prototype.toHtml = function () {
-    let template = Handlebars.compile($('#project-template').text());
+    let template = Handlebars.compile($('#project-template').html());
     return template(this);
   };
 
   app.renderProjects = function(data) {
-    data.map(function(projectObject) {
+    data.forEach(function(projectObject) {
       projects.push(new app.Project(projectObject));
     })
 
-    projects.map(function(project){
+    projects.forEach(function(project){
       $('#projects').append(project.toHtml());
     });
   }
 
-  app.loadData = function() {
+  app.Project.loadData = function() {
+    projects = [];
     if(localStorage.projectData) {
       app.renderProjects(JSON.parse(localStorage.projectData));
     } else {
-      $.getJSON('/data/projectData.json')
+      $.getJSON('public/data/projectData.json')
         .then(function(data) {
           localStorage.setItem('projectData', JSON.stringify(data));
           app.renderProjects(data);
