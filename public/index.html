@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/modules.css">
+  <link rel="stylesheet" href="public/styles/base.css">
+  <link rel="stylesheet" href="public/styles/layout.css">
+  <link rel="stylesheet" href="public/styles/modules.css">
   <script src="https://use.fontawesome.com/fe9fcf98cb.js"></script>
 
   <script id="project-template" type="text/x-handlebars-template">
@@ -26,17 +26,17 @@
   <nav class="main-nav">
     <i id="burger-close" class="fa fa-times" aria-hidden="true"></i>
     <ul>
-      <li class="nav-tab" data-nav="home"><a href="#home">Home</a></li>
-      <li class="nav-tab" data-nav="projects"><a href="#projects">Projects</a></li>
-      <li class="nav-tab" data-nav="contact"><a href="#contact">Contact</a></li>
+      <li class="nav-tab" data-nav="home"><a href="home">Home</a></li>
+      <li class="nav-tab" data-nav="projects"><a href="projects">Projects</a></li>
+      <li class="nav-tab" data-nav="contact"><a href="contact">Contact</a></li>
     </ul>
   </nav>
   <div id="home" class="tab">
-    <img class="img-home" src="resources/a_a_letter_logo_psd_design.png"/>
+    <img class="img-home" src="public/resources/a_a_letter_logo_psd_design.png"/>
   </div>
   <div id="projects" class="tab"></div>
   <div id="contact" class="tab">
-    <img class="img-contact" src="resources/User-512.png">
+    <img class="img-contact" src="public/resources/User-512.png">
     <h3>Contact Me!</h3>
     <div class="social-media-div">
       <a href="https://github.com/KAardal"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -47,6 +47,12 @@
   <footer id="footer"><p></p></footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-  <script src="scripts/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.min.js"></script>
+  <script src="public/scripts/models/project.js"></script>
+  <script src="public/scripts/views/app.js"></script>
+  <script src="public/scripts/controllers/homeController.js"></script>
+  <script src="public/scripts/controllers/projectsController.js"></script>
+  <script src="public/scripts/controllers/contactController.js"></script>
+  <script src="public/scripts/controllers/routes.js"></script>
 </body>
 </html>
