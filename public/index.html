@@ -18,6 +18,14 @@
       <a class="project-repo" href="{{repoURL}}"><i class="fa fa-github" aria-hidden="true"></i></a>
     </div>
   </script>
+
+  <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank">
+          <h3>{{name}}</h3>
+        </a>
+        <p>Description: {{description}}</p>
+    </script>
 </head>
 <body>
   <div class="burger-open-div">
@@ -43,6 +51,7 @@
       <a href="https://www.linkedin.com/in/kyle-aardal-544a49129/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
       <a href="https://twitter.com/AardalKyle"<i class="fa fa-twitter" aria-hidden="true"></i></a>
     </div>
+    <ul></ul>
   </div>
   <footer id="footer"><p></p></footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
