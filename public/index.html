@@ -20,12 +20,13 @@
   </script>
 
   <script id="repo-template" type="text/x-handlebars-template">
-      <li>
-        <a href="{{html_url}}" target="_blank">
-          <h3>{{name}}</h3>
-        </a>
-        <p>Description: {{description}}</p>
-    </script>
+    <li>
+      <a href="{{html_url}}" target="_blank">
+        <h3>{{name}}</h3>
+      </a>
+      <p>Description: {{description}}</p>
+    </li>
+  </script>
 </head>
 <body>
   <div class="burger-open-div">
@@ -53,14 +54,16 @@
     </div>
     <ul></ul>
   </div>
-  <footer id="footer"><p></p></footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.min.js"></script>
+  <script src="/scripts/models/githubTokens.js"></script>
   <script src="public/scripts/models/project.js"></script>
   <script src="public/scripts/views/app.js"></script>
   <script src="public/scripts/controllers/homeController.js"></script>
   <script src="public/scripts/controllers/projectsController.js"></script>
+  <script src="repo.js"></script>
+  <script src="repoView.js"></script>
   <script src="public/scripts/controllers/contactController.js"></script>
   <script src="public/scripts/controllers/routes.js"></script>
 </body>

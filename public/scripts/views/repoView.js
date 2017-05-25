@@ -6,9 +6,12 @@ var app = app || {};
 
   repoView.index = function() {
     let render = Handlebars.compile($('#repo-template').html());
+    let $contact = $('#contact');
 
+    $contact.find('ul').empty();
+    $contact.show().siblings().hide();
 
-    $('#about ul').append(
+    $('#contact ul').append(
       app.repos.with('name').map(render)
     );
   };
