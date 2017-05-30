@@ -6,10 +6,7 @@ var app = app || {};
   contactController.index = () => {
     $('.tab').hide();
     $('#contact').show();
-
-    app.repos.requestRepos(app.repoView.index);
   };
-
 
   module.contactController = contactController;
 })(app);
